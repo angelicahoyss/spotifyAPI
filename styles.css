@@ -1,0 +1,103 @@
+@font-face {
+    font-family: GreyCliff-Heavy;
+    src: url(./fonts/GreyCliff/Greycliff-CF-Heavy.otf);
+}
+@font-face {
+    font-family: GreyCliff-Light;
+    src: url(./fonts/GreyCliff/Greycliff-CF-Light.otf);
+}
+@font-face {
+    font-family: GreyCliff-Medium;
+    src: url(./fonts/GreyCliff/Greycliff-CF-Medium.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00f;
+}
+input {
+    background-color: #00f;
+    -webkit-appearance: none;
+    outline: none;
+    border: 0px;
+    outline-width: 0;
+    height: 300px;
+    width: 1500px;
+    font-family: GreyCliff-Heavy;
+    font-size: 200px;
+    color: white;
+    padding-left: 20px;
+}
+
+.image {
+    height: auto;
+    width: 400px;
+}
+.results {
+    font-family: GreyCliff-Light;
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.no-result {
+    font-family: GreyCliff-Heavy;
+    color: #ff007f;
+    letter-spacing: 0.2em;
+    font-size: 20px;
+    padding-top: 100px;
+}
+
+input::placeholder {
+    color: white;
+    font-family: GreyCliff-Heavy;
+    font-size: 170px;
+}
+
+.load-more-btn {
+    display: none;
+    outline: none;
+    -webkit-appearance: none;
+    border: none;
+    color: white;
+    background-color: #00f;
+    font-family: GreyCliff-Heavy;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    padding-left: 20px;
+}
+
+.submit-btn {
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    color: white;
+    background-color: #00f;
+    font-family: GreyCliff-Heavy;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    display: block;
+    padding-left: 20px;
+}
+
+.artist-or-album {
+    outline: none;
+    /* -webkit-appearance: none; */
+    /* -moz-appearance: none; */
+    appearance: none;
+    border: none;
+    background-color: #00f;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding: 0.6em 1.4em 0.5em 0.8em;
+    font-family: GreyCliff-Medium;
+    letter-spacing: 0.3em;
+    margin-left: 20px;
+}
