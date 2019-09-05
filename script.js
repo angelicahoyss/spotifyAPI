@@ -49,24 +49,28 @@
         for (var i = 0; i < response.items.length; i++) {
             if (response.items[i].images[0]) {
                 loadArtists +=
-                    '<a href="' +
+                    '<div class="result"><a href="' +
                     response.items[i].external_urls.spotify +
-                    '" target="_blank"><div><img class="image" src="' +
+                    '" target="_blank"><img class="image" src="' +
                     response.items[i].images[0].url +
-                    '"></div></a>';
+                    '"></a><div class="overlay"><a style="text-decoration:none; color:white" href="' +
+                    response.items[i].external_urls.spotify +
+                    '" target="_blank">' + '<div class="title">' +
+                    response.items[i].name +
+                    "</a></div></div></div>";
             } else {
                 loadArtists +=
-                    '<a href="' +
+                    '<div class="result"><a href="' +
                     response.items[i].external_urls.spotify +
-                    '" target="_blank"><div><img class="image" src="spotify-1-logo-black-and-white.png"></div></a>';
+                    '" target="_blank"><img class="image" src="spotify-1-logo-black-and-white.png"></a></div>';
             }
-            loadArtists +=
-                '<a href="' +
-                response.items[i].external_urls.spotify +
-                '" target="_blank"><div class="results">' +
-                response.items[i].name +
-                "</div></a>";
-            console.log(response.items[i].name);
+            // loadArtists +=
+            //     '<div class="overlay"><a href="' +
+            //     response.items[i].external_urls.spotify +
+            //     '" target="_blank">' +
+            //     response.items[i].name +
+            //     "</a></div>";
+            // console.log(response.items[i].name);
         }
         $(".results").html(loadArtists);
         // $(".results").append(loadNext);
